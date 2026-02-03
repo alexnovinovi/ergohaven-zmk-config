@@ -18,6 +18,8 @@
             label = "TD_SPACE_RU";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp RU_COMMA>, <&kp RU_DOT>;
+
+            tapping-term-ms = <100>;
         };
 
         TD_SPACE_EN: TD_SPACE_EN {
@@ -25,6 +27,15 @@
             label = "TD_SPACE_EN";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp COMMA>, <&kp DOT>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp COMMA>, <&kp DOT>;
+
+            tapping-term-ms = <100>;
         };
     };
 
