@@ -39,13 +39,13 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <15 16>;
+            key-positions = <54 55>;
             layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <15 16>;
+            key-positions = <54 55>;
             layers = <0>;
         };
     };
