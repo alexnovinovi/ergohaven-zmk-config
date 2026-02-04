@@ -17,14 +17,20 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SPACE_RU";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp RU_COMMA>, <&kp RU_DOT>;
+            bindings =
+                <&kp SPACE>,
+                <&m_td_space_ru RU_COMMA>,
+                <&m_td_space_ru RU_DOT>;
         };
 
         TD_SPACE_EN: TD_SPACE_EN {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SPACE_EN";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp COMMA>, <&kp DOT>;
+            bindings =
+                <&kp SPACE>,
+                <&m_td_space_en COMMA>,
+                <&m_td_space_en DOT>;
         };
     };
 
@@ -115,6 +121,26 @@
             label = "RU";
             wait-ms = <0>;
             tap-ms = <30>;
+        };
+
+        m_td_space_ru: new_macro {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_tap>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp RU_SPACE>;
+
+            label = "NEW_MACRO";
+        };
+
+        m_td_space_en: m_td_space_en {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_tap>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp SPACE>;
+
+            label = "M_TD_SPACE_EN";
         };
     };
 
