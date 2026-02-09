@@ -39,13 +39,13 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <50 54 55 59>;
+            key-positions = <54 36>;
             layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <50 54 55 59>;
+            key-positions = <54 36>;
             layers = <0>;
         };
 
@@ -151,14 +151,14 @@
         OBS_1: OBS_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(NUMBER_1))>;
+            bindings = <&kp LA(LC(NUMBER_1))>;
             label = "OBS_1";
         };
 
         OBS_2: OBS_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(NUMBER_2))>;
+            bindings = <&kp LA(LC(NUMBER_2))>;
             label = "OBS_2";
         };
     };
