@@ -40,7 +40,7 @@
         cmben {
             bindings = <&layer_en>;
             key-positions = <54 36>;
-            layers = <1>;
+            layers = <1 6>;
         };
 
         cmbru {
@@ -153,6 +153,8 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LC(NUMBER_1))>;
             label = "OBS_1";
+            tap-ms = <30>;
+            wait-ms = <0>;
         };
 
         OBS_2: OBS_2 {
@@ -160,6 +162,8 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LC(NUMBER_2))>;
             label = "OBS_2";
+            tap-ms = <30>;
+            wait-ms = <0>;
         };
     };
 
